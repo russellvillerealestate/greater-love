@@ -57,14 +57,15 @@
       box-shadow: 0 2px 12px rgba(0,0,0,0.35);
     }
 
-    .media-box p {
-      color: #d7dce5;
-    }
-
     iframe {
       width: 100%;
       border: none;
       border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    iframe:last-child {
+      margin-bottom: 0;
     }
 
     footer {
@@ -89,8 +90,6 @@
     <h2>YouTube</h2>
 
     <div class="media-box">
-      <p>Featured YouTube video:</p>
-
       <iframe
         height="315"
         src="https://www.youtube.com/embed/V71eVoMVjAM"
@@ -104,7 +103,13 @@
     <h2>Podcasts</h2>
 
     <div class="media-box">
-      <p>Featured podcast episode:</p>
+      <iframe
+        style="border-radius:12px"
+        src="https://open.spotify.com/embed/show/1Hf2fgeTTQRqHdKDbFUR22"
+        height="352"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+      </iframe>
 
       <iframe
         style="border-radius:12px"
